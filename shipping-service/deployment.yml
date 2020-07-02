@@ -15,5 +15,5 @@ spec:
             containers:
                 -
                     name: shipping-service
-                    imagePullPolicy: Never
+                    imagePullPolicy: "IfNotPresent"
                     image: 'shipping-service:1.0'
