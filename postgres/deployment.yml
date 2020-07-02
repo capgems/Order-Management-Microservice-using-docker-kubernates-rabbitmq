@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  namespace: kailash
+  namespace: shyamsanju
   name: postgres
 spec:
   replicas: 1

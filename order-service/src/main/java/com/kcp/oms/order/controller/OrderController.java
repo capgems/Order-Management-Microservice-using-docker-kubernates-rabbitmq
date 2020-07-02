@@ -99,7 +99,7 @@ public class OrderController {
         return Optional.ofNullable(productInventoryResource);
     }
 
-    static final String URL_INVENTORY = "http://inventory-service.kailash.svc.cluster.local:9200/inventory/";
+    static final String URL_INVENTORY = "http://inventory-service.shyamsanju.svc.cluster.local:9200/inventory/";
 
     private ProductInventoryResource getInventoryByProductId(long productId) {
         ProductInventoryResource inv = null;
@@ -118,7 +118,7 @@ public class OrderController {
                 {
                     try {
                         ShippingMessage message = new ShippingMessage();
-                        message.setAddress("Kailash: Marathahalli, Bangalore");
+                        message.setAddress("shyamsanju: Marathahalli, Bangalore");
                         message.setLocation("Bangalore");
                         queueProducer.produce(message);
                         logger.info(

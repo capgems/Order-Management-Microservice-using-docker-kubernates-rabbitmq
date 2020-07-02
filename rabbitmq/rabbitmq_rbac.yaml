@@ -3,13 +3,13 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: rabbitmq 
-  namespace: kailash 
+  namespace: shyamsanju
 ---
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1beta1
 metadata:
   name: endpoint-reader
-  namespace: kailash
+  namespace: shyamsanju
 rules:
 - apiGroups: [""]
   resources: ["endpoints"]
@@ -19,7 +19,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1beta1
 metadata:
   name: endpoint-reader
-  namespace: kailash
+  namespace: shyamsanju
 subjects:
 - kind: ServiceAccount
   name: rabbitmq

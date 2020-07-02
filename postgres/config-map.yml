@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: postgres-config
-  namespace: kailash
+  namespace: shyamsanju
   labels:
     app: postgres
 data:
