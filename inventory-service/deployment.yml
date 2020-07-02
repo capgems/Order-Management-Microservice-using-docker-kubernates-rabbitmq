@@ -15,4 +15,5 @@ spec:
             containers:
                 -
                     name: inventory-service
+                    imagePullPolicy: Never
                     image: 'inventory-service:1.0'

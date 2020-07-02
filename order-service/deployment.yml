@@ -15,4 +15,5 @@ spec:
             containers:
                 -
                     name: order-service
+                    imagePullPolicy: Never
                     image: 'order-service:1.0'
