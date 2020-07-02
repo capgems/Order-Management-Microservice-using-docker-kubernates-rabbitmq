@@ -16,4 +16,4 @@ spec:
                 -
                     name: shipping-service
                     imagePullPolicy: "IfNotPresent"
-                    image: 'shipping-service:1.0'
+                    image: 'shyamsanju/shipping-service:1.0'

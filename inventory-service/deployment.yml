@@ -16,4 +16,4 @@ spec:
                 -
                     name: inventory-service
                     imagePullPolicy: "IfNotPresent"
-                    image: 'inventory-service:1.0'
+                    image: 'shyamsanju/inventory-service:1.0'

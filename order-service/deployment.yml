@@ -16,4 +16,4 @@ spec:
                 -
                     name: order-service
                     imagePullPolicy: "IfNotPresent"
-                    image: 'order-service:1.0'
+                    image: 'shyamsanju/order-service:1.0'
